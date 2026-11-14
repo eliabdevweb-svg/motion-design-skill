@@ -24,21 +24,23 @@ Compatible avec [plus de 40 agents](https://skills.sh), dont Claude Code, Cursor
 
 ### L’utiliser avec HyperFrames
 
-Dans le dossier de votre projet vidéo HyperFrames, installez ou mettez à jour les compétences HyperFrames officielles :
+Quand vous demandez à un agent de créer ou modifier une vidéo HyperFrames, cette compétence lui demande d’abord si vous souhaitez installer ou mettre à jour les compétences HyperFrames officielles. **Aucune commande d’installation n’est lancée sans votre accord.** Si vous refusez, l’agent ignore cette étape et continue avec les compétences et outils déjà disponibles.
+
+Après votre accord, la commande officielle à lancer depuis le dossier du projet vidéo est :
 
 ```bash
 npx hyperframes skills update
 ```
 
-Cette commande installe l’ensemble de compétences de base HyperFrames correspondant à la version de la CLI. Vous pouvez aussi installer les compétences autonomes via le sélecteur interactif :
+Elle installe ou actualise le jeu de compétences de base HyperFrames correspondant à la version de la CLI. Vous pouvez aussi installer les compétences autonomes via le sélecteur interactif :
 
 ```bash
 npx skills add heygen-com/hyperframes
 ```
 
-Choisissez le groupe **Core Skills**. Installez ensuite la compétence de ce dépôt avec la commande ci-dessus, si elle n’est pas déjà disponible pour votre agent. Redémarrez ou rouvrez l’agent dans le dossier du projet après l’installation.
+Choisissez le groupe **Core Skills**. Redémarrez ou rouvrez l’agent dans le dossier du projet après l’installation.
 
-**Prérequis HyperFrames :** Node.js 22 ou ultérieur et FFmpeg pour le rendu local. Consultez la [documentation officielle](https://hyperframes.heygen.com/quickstart) pour les détails à jour.
+**Prérequis HyperFrames :** Node.js 22 ou ultérieur et FFmpeg pour le rendu local. Consultez le [guide officiel de démarrage](https://hyperframes.heygen.com/quickstart) pour les informations à jour.
 
 ### Démarrer un projet HyperFrames
 
@@ -61,7 +63,7 @@ Demandez à l’agent d’utiliser d’abord `/hyperframes` pour respecter le fo
 
 **Patterns** (`patterns/`) — Recettes d’animations d’entrée et de sortie, de retours d’état (succès, erreur, chargement, survol), de mouvements d’ambiance et de chorégraphies multi-éléments.
 
-**Références** (`reference/`) — Tables de timing et d’easing, guide de sélection des propriétés, checklist qualité, dépannage et guide d’application à HyperFrames.
+**Références** (`reference/`) — Tables de timing et d’easing, guide de sélection des propriétés, checklist qualité, dépannage et guide du workflow HyperFrames.
 
 ## Quand l’utiliser
 
