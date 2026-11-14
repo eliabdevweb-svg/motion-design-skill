@@ -6,86 +6,85 @@
   />
 </p>
 
+# Compétence en design de mouvement
 
-# Motion Design Skill
+Principes universels de design de mouvement pour les agents IA. Basé sur la philosophie, agnostique à l'implémentation.
 
-Universal motion design principles for AI agents. Philosophy-first, implementation-agnostic.
+Apprend aux agents à penser comme des directeurs de mouvement — choisir le bon timing, l'easing, la chorégraphie et l'intention émotionnelle avant d'écrire une seule ligne de code d'animation. Fonctionne avec n'importe quel système d'animation.
 
-Teaches agents to think like motion directors — choosing the right timing, easing, choreography, and emotional intent before writing a single line of animation code. Works with any animation system (CSS, Framer Motion, GSAP, Lottie, Spring, etc.).
-
-## Install
+## Installer
 
 ```bash
 npx skills add LottieFiles/motion-design-skill
 ```
 
-Supports [40+ agents](https://skills.sh) including Claude Code, Cursor, Codex, GitHub Copilot, and more.
+Prend en charge [40+ agents](https://skills.sh) dont Claude Code, Cursor, Codex, GitHub Copilot et bien d'autres.
 
-## What's included
+## Ce que contient
 
-**Core** (`SKILL.md`) — Quick reference with the 8-step checklist, motion personality archetypes, duration/easing tables, property selection guide, common patterns, and quality rules.
+**Core** (`SKILL.md`) — Référence rapide avec la checklist en 8 étapes, les archétypes de personnalité de mouvement, les tableaux de durée et d'easing, le guide de sélection des propriétés, les patterns courants et les règles de qualité.
 
-**Philosophy** (`director/`) — Deep dives into the three pillars, Disney's 12 principles adapted for UI, emotion-to-motion mapping, choreography, narrative structure, and context adaptation.
+**Philosophie** (`director/`) — Approfondissements sur les trois piliers, les 12 principes de Disney adaptés à l'UI, la cartographie émotion → mouvement, la chorégraphie, la structure narrative et l'adaptation au contexte.
 
-**Patterns** (`patterns/`) — Ready-to-use recipes for entrance/exit animations, state feedback (success, error, loading, hover), ambient/continuous motion, and multi-element choreography.
+**Patterns** (`patterns/`) — Recettes prêtes à l'emploi pour les animations d'entrée/sortie, les retours d'état (succès, erreur, chargement, survol), les mouvements ambiants/continus et la chorégraphie multi-éléments.
 
-**Reference** (`reference/`) — Lookup tables for timing and easing, property selection guide, quality checklist, and troubleshooting common animation problems.
+**Reference** (`reference/`) — Tables de référence pour les timings et easing, guide de sélection des propriétés, checklist qualité et dépannage des problèmes d'animation courants.
 
-## When it activates
+## Quand elle s'active
 
-The skill activates when you're working on:
+La compétence s'active lorsque vous travaillez sur :
 
-- UI animations (buttons, cards, modals, page transitions)
-- Micro-interactions and feedback animations
-- Loading, success, or error states
-- Scroll-triggered or progress-based animations
-- Establishing brand motion identity
-- Multi-element choreography and sequencing
+- Animations UI (boutons, cartes, modales, transitions de page)
+- Micro-interactions et animations de feedback
+- États de chargement, succès ou erreur
+- Animations déclenchées par le scroll ou basées sur la progression
+- Établissement d'une identité de mouvement de marque
+- Chorégraphie et séquençage multi-éléments
 
-## Example prompts
-
-```
-Add a playful entrance animation to these card components
-```
+## Exemples de prompts
 
 ```
-Create a loading → success → error state transition for this form submit button
+Ajoute une animation d'entrée ludique à ces composants de carte
 ```
 
 ```
-Choreograph the entrance sequence for this dashboard — hero chart first, then stats cards, then sidebar
+Crée une transition chargement → succès → erreur pour ce bouton de soumission de formulaire
 ```
 
 ```
-Review my animation code and suggest improvements based on motion design principles
+Chorégraphie la séquence d'entrée de ce tableau de bord — premier le graphique principal, puis les cartes de statistiques, puis la barre latérale
 ```
 
-## Skill structure
+```
+Passe en revue mon code d'animation et suggère des améliorations selon les principes du design de mouvement
+```
+
+## Structure de la compétence
 
 ```
 skills/motion-design/
-├── SKILL.md                          # Main skill instructions (< 500 lines)
+├── SKILL.md                          # Instructions principales de la compétence (< 500 lignes)
 ├── director/
-│   ├── core-philosophy.md            # Three Pillars deep dive
-│   ├── decision-framework.md         # Full decision pipeline
-│   ├── disney-principles.md          # 12 principles, UI-adapted
-│   ├── motion-personality.md         # 4 archetypes + brand identity
-│   ├── emotion-mapping.md            # Emotion → motion translation
-│   ├── choreography.md              # Multi-element coordination
-│   ├── narrative-structure.md        # Micro-story framework
-│   └── context-adaptation.md         # Platform, a11y, performance
+│   ├── core-philosophy.md            # Analyse des trois piliers
+│   ├── decision-framework.md         # Pipeline complet de décision
+│   ├── disney-principles.md          # 12 principes, adaptés à l'UI
+│   ├── motion-personality.md         # 4 archétypes + identité de marque
+│   ├── emotion-mapping.md            # Traduction émotion → mouvement
+│   ├── choreography.md              # Coordination multi-éléments
+│   ├── narrative-structure.md       # Cadre micro-story
+│   └── context-adaptation.md         # Plateforme, accessibilité, performance
 ├── patterns/
-│   ├── entrance-exit.md              # Entrance/exit recipes
-│   ├── state-feedback.md             # Success, error, loading, hover
-│   ├── ambient-continuous.md         # Looping, breathing, parallax
-│   └── multi-element.md             # Stagger + choreography recipes
+│   ├── entrance-exit.md              # Recettes d'entrée/sortie
+│   ├── state-feedback.md             # Succès, erreur, chargement, survol
+│   ├── ambient-continuous.md         # Boucles, respiration, parallaxe
+│   └── multi-element.md               # Recettes de stagger + chorégraphie
 └── reference/
-    ├── timing-easing-tables.md       # Duration + easing lookups
-    ├── property-selection.md         # Property communication guide
-    ├── quality-checklist.md          # Evaluation criteria
-    └── troubleshooting.md           # Animation smells + fixes
+    ├── timing-easing-tables.md       # Tables de durée + easing
+    ├── property-selection.md         # Guide de communication des propriétés
+    ├── quality-checklist.md          # Critères d'évaluation
+    └── troubleshooting.md            # Maux d'animation + corrections
 ```
 
-## License
+## Licence
 
 MIT
